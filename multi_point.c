@@ -8,26 +8,28 @@ float f(float x)
    return y;
 }
 
-float g(float x)
+float df(float x)
 {
 
- float y = pow(2.7182818284,-x);
+ float y = -pow(2.7182818284,-x) - 1;
  return y;
 }
 
 int main()
 {
 int i=0;
-float x0,x1,e0,e1;
+float x0,x01,x1,e0,e1;
 FILE* fp;
-fp = fopen("fixedpoint_data.txt","w");
+fp = fopen("multipoint_data.txt","w");
 printf("Enter x:\n");
 scanf("%lf", x1);
 
 while(1)
 {
 
- x0 = g(x1);
+ x01 = x1 - f(x1)/(2*df(x1));
+ x0 = x1 - f(x1)/df(x01);
+ 
  e0 = x0 - x1;
  
  if(i != 0)

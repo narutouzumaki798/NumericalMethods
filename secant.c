@@ -4,7 +4,7 @@
 
 float f(float x)
 {
-   float y = pow(2.718,-x) - x;
+   float y = pow(2.7182818284,-x) - x;
    return y;
 }
 

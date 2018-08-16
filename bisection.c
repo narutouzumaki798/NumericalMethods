@@ -3,7 +3,7 @@
 
 double fun(double x)
 {
-    double ans = pow(2.718,-x) - x;
+    double ans = pow(2.7182818284,-x) - x;
     return ans;
 }
 

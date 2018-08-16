@@ -6,21 +6,21 @@
 //f(x)
 float f(float x)
 {
-float y = pow(2.718,-x) - x;
+float y = pow(2.7182818284,-x) - x;
 return y;
 }
 
 //differentiation 0f f(x)
 float df(float x)
 {
-float y = -pow(2.718,-x) - 1;
+float y = -pow(2.7182818284,-x) - 1;
 return y;
 }
 
 
 float ddf(float x)
 {
-float y = pow(2.718,-x);
+float y = pow(2.7182818284,-x);
 return y;
 }
 
