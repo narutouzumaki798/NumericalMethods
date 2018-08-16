@@ -2,12 +2,14 @@
 #include<math.h>
 #define float double
 
+//function f(x)
 float f(float x)
 {
    float y = pow(2.7182818284,-x) - x;
    return y;
 }
 
+//function g such that f(x)=0 when g(x)=x
 float g(float x)
 {
 
@@ -22,12 +24,12 @@ float x0,x1,e0,e1;
 FILE* fp;
 fp = fopen("fixedpoint_data.txt","w");
 printf("Enter x:\n");
-scanf("%lf", x1);
+scanf("%lf", x1); //initial approximation
 
 while(1)
 {
 
- x0 = g(x1);
+ x0 = g(x1);//new x
  e0 = x0 - x1;
  
  if(i != 0)

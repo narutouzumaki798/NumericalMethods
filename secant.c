@@ -15,12 +15,12 @@ FILE* fp;
 fp = fopen("secant_data.txt","w");
 float a,b,c,e1=0,e2=0;
 printf("Enter a,b:\n");
-scanf("%lf",&a); scanf("%lf",&b);
+scanf("%lf",&a); scanf("%lf",&b); //initial range
 
 while(1)
 {
 
-c = (a*f(b) - b*f(a))/(f(b) - f(a));
+c = (a*f(b) - b*f(a))/(f(b) - f(a)); //calculating value of c
 a = b;
 b = c;
 e1 = b-a;
@@ -31,7 +31,7 @@ if(i != 0)
 }
 if(fabs(b-a) <= 0.00001 ) break;
 e2 = e1;
-if(i > 1000) break;
+if(i > 1000) break; //break after large number of iterations
 i++;
 }
 

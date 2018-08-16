@@ -10,14 +10,14 @@ float y = pow(2.7182818284,-x) - x;
 return y;
 }
 
-//differentiation 0f f(x)
+//differentiation of f(x)
 float df(float x)
 {
 float y = -pow(2.7182818284,-x) - 1;
 return y;
 }
 
-
+//double differentiation of f(x)
 float ddf(float x)
 {
 float y = pow(2.7182818284,-x);
