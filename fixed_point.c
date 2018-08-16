@@ -31,10 +31,10 @@ while(1)
 
  x0 = g(x1);//new x
  e0 = x0 - x1;
- 
+ float n = fabs(log(fabs(e0))/log(fabs(e1)));
  if(i != 0)
  {
-  printf("itr=%d x=%lf f(x)=%lf err=%lf \n", i,x0,f(x0), fabs(e0/e1) );
+  printf("itr=%d x=%lf f(x)=%lf err=%lf n=%lf\n", i,x0,f(x0), fabs(e0/e1),n );
   fprintf(fp,"itr=%d x=%lf f(x)=%lf err=%lf \n", i,x0,f(x0), fabs(e0/e1) );
  }
   
