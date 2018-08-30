@@ -30,8 +30,8 @@ printf("Enter Constants: \n");
 for(i=0;i<n;i++) scanf("%f",&c[i]);
 
 
-//float x = det(a,n);
-
+   //float x = det(a,n);
+ 
 
 for (j=0;j<n;j++)
 {
